@@ -1,0 +1,48 @@
+{
+  "title":"Assignment 1",
+  "description":"Answer the following questions",
+  "finished":false,
+  "questions":[
+    {
+      "number":1,
+      "text":"Read the following article http://martinfowler.com/articles/microservices.html and explain what \"Microservices Architecture\" means.",
+      "value":20,
+      "answer":"No answer at this moment"
+    },
+    {
+      "number":2,
+      "text":"Create a bash file to setup a complete environment for this class.",
+      "value":20,
+      "answer":"No answer at this moment"
+    },
+    {
+      "number":3,
+      "text":"Create a grunt task to deploy your website to your own bucket in S3.",
+      "value":30,
+      "answer":"user$: bash path/to/create_site.sh [bucketName].\nIncludes deleteing bucket, creating bucket, building with grunt uploading dist, making the bucket a website and opening it with firefox.",
+      "file":"../scripts/create_site.sh"
+    },
+    {
+      "number":4,
+      "text":"Explain how routes work in angular and a code example.",
+      "value":10,
+      "answer":"No answer at this moment",
+      "file":""
+    },
+    {
+      "number":5,
+      "text":"Explain how you can have more than one access key in your computer and how to use each one. Provide code or configuration examples.",
+      "value":10,
+      "answer":"No answer at this moment"
+    },
+    {
+      "number":6,
+      "text":"Explain what are you going to do different this semester based on last semester experience.",
+      "value":10,
+      "answer":"No answer at this moment"
+    }
+
+  ]
+
+}
+

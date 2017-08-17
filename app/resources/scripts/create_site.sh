@@ -18,7 +18,7 @@ cd dist
 echo "Upload to S3"
 aws s3 sync . s3://$BUCKET --acl public-read
 
-echo "Creating website"
+echo "Creating website in bucket"
 aws s3api put-bucket-website --bucket $BUCKET --website-configuration "{\"IndexDocument\":{\"Suffix\":\"index.html\"},\"ErrorDocument\":{\"Key\":\"404.html\"}}"
-
+echo "opening website"
 firefox http://$BUCKET.s3-website-us-east-1.amazonaws.com

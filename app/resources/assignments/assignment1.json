@@ -20,7 +20,7 @@
       "text":"Create a grunt task to deploy your website to your own bucket in S3.",
       "value":30,
       "answer":"user$: bash path/to/create_site.sh [bucketName].\nIncludes deleteing bucket, creating bucket, building with grunt uploading dist, making the bucket a website and opening it with firefox.",
-      "file":"../scripts/create_site.sh"
+      "file":"/resources/scripts/create_site.sh"
     },
     {
       "number":4,

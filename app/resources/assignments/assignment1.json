@@ -13,21 +13,21 @@
       "number":2,
       "text":"Create a bash file to setup a complete environment for this class.",
       "value":20,
-      "answer":"No answer at this moment"
+      "answer":"Installs pip for python 3, aws-cli, nodejs, npm, grunt, gulp, yeoman and git",
+      "file":"/resources/scripts/environment_setup.sh"
     },
     {
       "number":3,
       "text":"Create a grunt task to deploy your website to your own bucket in S3.",
       "value":30,
-      "answer":"user$: bash path/to/create_site.sh [bucketName].\nIncludes deleteing bucket, creating bucket, building with grunt uploading dist, making the bucket a website and opening it with firefox.",
+      "answer":"Includes deleting bucket, creating bucket, building with grunt uploading dist, making the bucket a website and opening it with firefox.",
       "file":"/resources/scripts/create_site.sh"
     },
     {
       "number":4,
       "text":"Explain how routes work in angular and a code example.",
       "value":10,
-      "answer":"No answer at this moment",
-      "file":""
+      "answer":"No answer at this moment"
     },
     {
       "number":5,
@@ -39,7 +39,8 @@
       "number":6,
       "text":"Explain what are you going to do different this semester based on last semester experience.",
       "value":10,
-      "answer":"No answer at this moment"
+      "answer":"I think I did 2 things wrong last semester: Not giving it my all during the first 2 periods and changing the architecture of my final project too many times. Basically I'm gonna try to give a bit more effort during the first 2 periods so I'm not hanging loose during the last one. And I'm trying to research as best as I can how to do a proper architecture for the projects we're planning."
+
     }
 
   ]

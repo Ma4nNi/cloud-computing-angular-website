@@ -27,7 +27,7 @@
       "number":4,
       "text":"Explain how routes work in angular and a code example.",
       "value":10,
-      "answer":"No answer at this moment"
+      "answer":"The routes in Angular help link the view and the controllers. It watches location.url() and maps the path to an existing route definition.\nInternally $route uses $template. The goals of angular routing involve no page refresh on page change and having different data on each page. When you declare a new route you include an associated view/template and a controller.\nNow, talking about the $template functionality: the first time the template is accessed, angular will get it from the server and add it to the $templateCache"
     },
     {
       "number":5,

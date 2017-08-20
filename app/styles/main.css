@@ -17,10 +17,19 @@ Question custom styles
 .question-wrapper{
   padding-bottom:20px;
   padding-top:20px;
+  padding-right:30px;
 }
 
-.question-text{}
-
+.question-text{
+  font-weight: 600;
+  color: #1b6d85;
+}
+.question-value{
+  font-weight:700;
+}
+.question-answer{
+  font-style:italic;
+}
 /*****/
 
 

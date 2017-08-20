@@ -7,7 +7,7 @@
       "number":1,
       "text":"Read the following article http://martinfowler.com/articles/microservices.html and explain what \"Microservices Architecture\" means.",
       "value":20,
-      "answer":"No answer at this moment"
+      "answer":"Is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms. Each of these services should also be independently deployable. There shouldn’t be much centralized management."
     },
     {
       "number":2,
@@ -33,7 +33,8 @@
       "number":5,
       "text":"Explain how you can have more than one access key in your computer and how to use each one. Provide code or configuration examples.",
       "value":10,
-      "answer":"No answer at this moment"
+      "answer":"$ export AWS_PROFILE=user2 .\nSetting the environment variable changes the default profile until the end of your shell session, or until you set the variable to a different value.",
+      "file":"/resources/scripts/credentials_example.sh"
     },
     {
       "number":6,

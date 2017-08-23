@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name yoApp.controller:AssignmentsCtrl
+ * @name yoApp.controller:PerformanceCtrl
  * @description
- * # AssignmentsCtrl
+ * # PerformanceCtrl
  * Controller of the yoApp
  */
 angular.module('yoApp')
-  .controller('AssignmentsCtrl', function () {
+  .controller('PerformanceCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

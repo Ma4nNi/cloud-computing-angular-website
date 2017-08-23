@@ -29,15 +29,15 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/Assignments', {
-        templateUrl: 'views/assignments.html',
-        controller: 'AssignmentsCtrl',
-        controllerAs: 'Assignments'
-      })
       .when('/assignment/:id', {
         templateUrl: 'views/assignmentdetails.html',
         controller: 'AssignmentdetailsCtrl',
         controllerAs: 'assignmentdetails'
+      })
+      .when('/performance', {
+        templateUrl: 'views/performance.html',
+        controller: 'PerformanceCtrl',
+        controllerAs: 'performance'
       })
       .otherwise({
         redirectTo: '/'

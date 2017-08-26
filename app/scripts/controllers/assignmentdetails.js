@@ -16,7 +16,7 @@ angular.module('yoApp')
     ];
 
     console.log("Params:",$routeParams.id);
-    $http.get('/resources/assignments/assignment1.json').
+    $http.get('/resources/assignments/assignment'+$routeParams.id+'.json').
     then(function onSuccess(response) {
       $scope.assignment = response.data;
       console.log("tengo una respuesta!", $scope.assignment );

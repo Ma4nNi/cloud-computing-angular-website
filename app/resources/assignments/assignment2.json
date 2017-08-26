@@ -1,0 +1,56 @@
+{
+  "title":"Assignment 2",
+  "description":"Every answer of these questions should be in your S3 website with a link to the code in CodeCommit.",
+  "finished":false,
+  "questions":[
+    {
+      "number":1,
+      "text":"Explain what CloudFormation is and write a yaml file to create a bucket using CloudFormation.",
+      "value":15,
+      "answer":"Is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms. Each of these services should also be independently deployable. There shouldn’t be much centralized management.\nMost microservices architectures aim to automate deployment of these services and also include automated tests. Relating to this last point, a key on microservices design  is being able to design for failure. Every component should be able to tolerate the failure of any other service."
+    },
+    {
+      "number":2,
+      "text":"Create a Hello World in NodeJs and create a tutorial about it.",
+      "value":15,
+      "answer":"Installs pip for python 3, aws-cli, nodejs, npm, grunt, gulp, yeoman and git",
+      "file":"/resources/scripts/environment_setup.sh"
+    },
+    {
+      "number":3,
+      "text":"Install the aws sdk for nodejs and create a tutorial about it.",
+      "value":15,
+      "answer":"Includes deleting bucket, creating bucket, building with grunt uploading dist, making the bucket a website and opening it with firefox.",
+      "file":"/resources/scripts/create_site.sh"
+    },
+    {
+      "number":4,
+      "text":"Create a code in NodeJs that will tell you the version/date of your website in S3.",
+      "value":15,
+      "answer":"The routes in Angular help link the view and the controllers. It watches location.url() and maps the path to an existing route definition.\nInternally $route uses $template. The goals of angular routing involve no page refresh on page change and having different data on each page. When you declare a new route you include an associated view/template and a controller.\nNow, talking about the $template functionality: the first time the template is accessed, angular will get it from the server and add it to the $templateCache. In simpler(my) words: the route specifies which components or files are gonna be loaded, and Angular makes everything lighter by using the cache to store files that were already loaded but are needed  in multiple views."
+    },
+    {
+      "number":5,
+      "text":"Read and explain the post about Microservices Trade-Offs by Martin Fowler(http://martinfowler.com/articles/microservice-trade-offs.html).",
+      "value":15,
+      "answer":"$ export AWS_PROFILE=user2 .\nSetting the environment variable changes the default profile until the end of your shell session, or until you set the variable to a different value.",
+      "file":"/resources/scripts/credentials_example"
+    },
+    {
+      "number":6,
+      "text":"Create a comparison table between AWS, Azure and Google Cloud.",
+      "value":15,
+      "answer":"I think I did 2 things wrong last semester: Not giving it my all during the first 2 periods and changing the architecture of my final project too many times. Basically I'm gonna try to give a bit more effort during the first 2 periods so I'm not hanging loose during the last one. And I'm trying to research as best as I can how to do a proper architecture for the projects we're planning."
+
+    },
+    {
+      "number":7,
+      "text":"Read at least 5 sections of Seth Godin’s Manifesto: “Stop Stealing Dreams” and tell me what you think about it.",
+      "value":"10",
+      "answer":""
+    }
+
+  ]
+
+}
+

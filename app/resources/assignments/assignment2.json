@@ -1,7 +1,7 @@
 {
   "title":"Assignment 2",
   "description":"Every answer of these questions should be in your S3 website with a link to the code in CodeCommit.",
-  "finished":false,
+  "finished":true,
   "questions":[
     {
       "number":1,
@@ -35,7 +35,7 @@
       "number":5,
       "text":"Read and explain the post about Microservices Trade-Offs by Martin Fowler(http://martinfowler.com/articles/microservice-trade-offs.html).",
       "value":15,
-      "answer":""
+      "answer":"This article by Martin Fowler talks about the benefits and drawbacks that come with a microservices architecture when comparing it to a monolithic architecture. He argues that module boundaries are easier to implement with a microservices architecture than with monoliths because of the nature of the project. That since concerns are separated and isolated deployment and updates are simpler with microservices. And since every module is independent that means you can do every part with the technologies that are the most convenient for them. - with microservices .However everything comes with drawbacks, in this case with microservices you don’t get real time consistency as you might with monoliths, you get eventual consistency - in distributed systems. Also with a microservices architecture you need to keep constant changes on different services, which means you need more people specialized in maintaining everything running smoothly, the fact that each module can work when one is down doesn’t mean that it’s ok for anything to fail. "
     },
     {
       "number":6,

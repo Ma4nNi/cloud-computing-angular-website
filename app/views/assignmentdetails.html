@@ -14,11 +14,15 @@
   <div class="col-md-8">
     <div class="row" ng-if="question.file!=null">
       <div class="col-md-4 col-md-offset-7">
-        File included: <a target="_self" href={{question.file}} download={{'question'+question.number+'-Manuel_Puentes'}}>Download</a>
+        File included: <!--<a target="_self" href={{question.file}} download={{'question'+question.number+'-Manuel_Puentes'}}>Download</a> -->
+        <a href="https://github.com/Ma4nNi/cloud-computing-angular-website/blob/master/app{{question.file}}">Download</a>
       </div>
     </div>
     <div class="row">
       <p class=question-answer>{{question.answer}}</p>
+      <p ng-repeat="image in question.images">
+        <img src="{{image}}" width="900px">
+      </p>
     </div>
 
   </div>

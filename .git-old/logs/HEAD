@@ -1,0 +1,17 @@
+0000000000000000000000000000000000000000 c21cc2d3b4312191085e13e4e04a575df12fd917 Manuel Puentes <nnymmol@hotmail.com> 1502863090 -0700	clone: from http://github.com/Ma4nNi/cloud-computing-angular-website
+c21cc2d3b4312191085e13e4e04a575df12fd917 9fc32995d5708bb11332ef2a68e7cef9bd379af9 Manuel Puentes <nnymmol@hotmail.com> 1502865140 -0700	commit: Initial webapp Generation
+9fc32995d5708bb11332ef2a68e7cef9bd379af9 43e5bf83c16da6bb9ceda13b0edc7750e5fe8618 Manuel Puentes <nnymmol@hotmail.com> 1502909045 -0700	commit: Assignment view baseline
+43e5bf83c16da6bb9ceda13b0edc7750e5fe8618 a68efc850fb8c04a6983f6790745e21a900d9788 Manuel Puentes <nnymmol@hotmail.com> 1502913389 -0700	commit: Comenzada configuracion para las tareas.
+a68efc850fb8c04a6983f6790745e21a900d9788 95b7a271e51259d0a9f102fb2549e59bea539004 Manuel Puentes <nnymmol@hotmail.com> 1502943408 -0700	commit: Support for custom routes and json based assignments
+95b7a271e51259d0a9f102fb2549e59bea539004 623c433e513211bcd2b86d1d03de6f24cbe1b28a Manuel Puentes <nnymmol@hotmail.com> 1502956140 -0700	commit: Informacion del about actualizada
+623c433e513211bcd2b86d1d03de6f24cbe1b28a f2d00d966d1b5ea4b4ec7a464b9ed593402c8172 Manuel Puentes <nnymmol@hotmail.com> 1503025350 -0700	commit: Changes to answers
+f2d00d966d1b5ea4b4ec7a464b9ed593402c8172 418f557870bdc26caba8b86fd62770a0a0dfe68a Manuel Puentes <nnymmol@hotmail.com> 1503206517 -0700	commit: A1- R5
+418f557870bdc26caba8b86fd62770a0a0dfe68a 06e3795f88af9d4e5456a006b1ad9d584ad864ec Manuel Puentes <nnymmol@hotmail.com> 1503208042 -0700	commit: Assigment 1 ver 1
+06e3795f88af9d4e5456a006b1ad9d584ad864ec c68935442cbd05787171ff17017f02d8e9a3c8e7 Manuel Puentes <nnymmol@hotmail.com> 1503211896 -0700	commit: Assignment 1 - Extended answers and added styles
+c68935442cbd05787171ff17017f02d8e9a3c8e7 9f12afb77827f65488abe4e3b2f16afd131f8963 Manuel Puentes <nnymmol@hotmail.com> 1503462640 -0700	commit: Agregado performance chart
+9f12afb77827f65488abe4e3b2f16afd131f8963 8509aeffacc6cbe5bc9ad20c196c79d6f7e92818 Manuel Puentes <nnymmol@hotmail.com> 1503771704 -0700	commit: A2 template start
+8509aeffacc6cbe5bc9ad20c196c79d6f7e92818 6d6620e39005ebc97eaf4c00a084c4be3a80b0a3 Manuel Puentes <nnymmol@hotmail.com> 1503774842 -0700	commit: Added helloWorld.js
+6d6620e39005ebc97eaf4c00a084c4be3a80b0a3 0c9e8c5b3d96f49627d8e27430727c9dd5be57bf Manuel Puentes <nnymmol@hotmail.com> 1503777315 -0700	commit: added aws-sdk node examples
+0c9e8c5b3d96f49627d8e27430727c9dd5be57bf dccb15fe20b797965b543be6331416af243cef4c Manuel Puentes <nnymmol@hotmail.com> 1503815084 -0700	commit: Every question in A2 exceptnumber 5
+dccb15fe20b797965b543be6331416af243cef4c e60b14d76c904aabfb2a27c6f256fdc7b3b47b9d Manuel Puentes <nnymmol@hotmail.com> 1503815550 -0700	commit: Finished v1 of A2
+e60b14d76c904aabfb2a27c6f256fdc7b3b47b9d 7ffb4989acaca77d148a9cae88bb11054e2c79c6 Manuel Puentes <nnymmol@hotmail.com> 1503816780 -0700	commit: Small fixes

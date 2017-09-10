@@ -14,8 +14,8 @@
       "number":2,
       "text":"Create a NodeJS script that will do the following:• Will get the Nasa Astronomy Picture of the day.• Save the image in the local file system.• Print the title of the image.",
       "value":20,
-      "answer":"",
-      "file":"/resources/scripts/A2/helloWorld.js"
+      "answer":"NodeJS file provided",
+      "file":"/resources/scripts/A3/nasa-apod.js"
     },
     {
       "number":3,

@@ -21,13 +21,16 @@
       "number":3,
       "text":"Implement Google Analytics in your personal web site (All teams will do the same for their Final Project).",
       "value":20,
-      "answer":""
+      "answer":"Implemented. Added image proof below. Tried adding a graph in the performance view but failed miserably.",
+      "images":[
+        "http://i.imgur.com/zr828vk.png"
+      ]
     },
     {
       "number":4,
-      "text":"Read and explain the following article by Martin Fowler: http://martinfowler.com/ articles/richardsonMaturityModel.html.",
+      "text":"Read and explain the following article by Martin Fowler: http://martinfowler.com/ articles/ richardsonMaturityModel.html.",
       "value":20,
-      "answer":""
+      "answer":"In this article Martin Fowler explains what's called a Richardson Maturity Model. That as far as I understood si a way to identify the maturity of an API design by using what he calls 'levels'. \n Level 0 is like a bare bones system, where you just send informatin through it. Level 1 is the same as 0 but instead of using a single end-point you strat dividing it into resources. Level 2 makes use of the HTTP verbs like GET, POSt and PUT - things in this level are pretty much what people start to consider  RESTful.Finally we have level 3 which talks about using hypermedia controls which allow us to change URI schemes without problems with the clients, and helps clients know what else they can do as well as allow the team to advertise new capabilities. \n In the end he tells us that Roy fielding considers reaching level 3 a pre condition of REST."
     },
     {
       "number":5,

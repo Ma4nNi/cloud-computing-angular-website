@@ -1,5 +1,7 @@
-<p>This is the superHeroes view.</p>
-
+<p>Tarea 4</p>
+<div class="row">
+  <h4>Codigos aqui! :  <a href="https://github.com/Ma4nNi/cloud-computing-angular-website/tree/master/app/resources/scripts/A4">Github</a></h4>
+</div>
 <div class=" row">
   <div class="col-md-6">
     <h4>Superhero 1 results</h4>
@@ -43,21 +45,24 @@
     console.log("AM READY ");
   });
 
-//  function Generate(){
-//    var values = $("#char1").val();
-//    var value2 = $("#char2").val();
-//
-//    console.log(values, value2)
-//    var compareUrl= "https://jr8gulay1b.execute-api.us-east-1.amazonaws.com/dev/comics/compare";
-//      $.get(compareUrl, function(data, status){
-//
-//        for(var i=0;i<data.volumes.length;i++){
-//          $("#volumesRow").append("<h4>"+data.volumes[i].name+" - "+data.volumes[i].id"</h4>");
-//        }
-//        for(var i=0;i<data.enemies.length;i++){
-//          $("#enemiesRow").append("<h4>"+data.enemies[i]+"</h4>");
-//        }
-//      });
-//  }
+  function Generate(){
+    $("#volumesRow").empty();
+    $("#enemiesRow").empty();
+    var values = $("#char1").val();
+    var value2 = $("#char2").val();
+
+    console.log(values, value2)
+    var compareUrl= "https://jr8gulay1b.execute-api.us-east-1.amazonaws.com/dev/comics/compare";
+      $.get(compareUrl, function(data, status){
+        $("#volumesRow").append("<h2>Common Volumes</h2>");
+        $("#enemiesRow").append("<h2>Common enemies</h2>");
+        for(var i=0;i<data.volumes.length;i++){
+          $("#volumesRow").append("<h4>"+data.volumes[i].name+" - "+data.volumes[i].id+"</h4>");
+        }
+        for(var i=0;i<data.enemies.length;i++){
+          $("#enemiesRow").append("<h4>"+data.enemies[i]+"</h4>");
+        }
+      });
+  }
 </script>
 

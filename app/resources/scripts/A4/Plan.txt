@@ -1,13 +1,14 @@
-Disculpe por no tener algo completo, cuando vi que todos estaban cambiando de api ya era medio tarde.
+Disculpe por dar una tarea un tanto diferente a lo que pediste, cuando vi que todos estaban cambiando de api ya tenia gran parte hecha ye investigada.
 
-Basicamente no tuve idea de como hacer requests mediante JS hacia el API de comic vine. termine creando mocks en mockable.io para calar todos los metodos.
+Basicamente no tuve idea de como hacer requests mediante JS hacia el API de comicVine debido a problemas con CORS.
+Termine creando mocks en mockable.io para calar todos los metodos y la logica que tenia. Para no entregar nada
 
 
-El plan era utilizar esta liga para obtener a los personajes cuando diera enter ya si actualizar la dropdown sin muchos requests
+El plan era utilizar esta liga para obtener a los personajes- actualizandose cada que presionaras enter
 http://comicvine.gamespot.com/api/characters/?api_key=3500994b89773681c6f41564eb101166f41caa34&format=json&field_list=id,name,api_detail_url&filter=name:"+event.name;
-donde event.name es el parametro de lo que esta escrito en el input de busqueda.
 
-despues de eso da a los personajes en el formato:
+Donde event.name es el parametro de lo que esta escrito en el input de busqueda.
+Eso me regresa  aperosnajes en el siguiente formato:
 
 "results": [
 {
@@ -63,8 +64,12 @@ y
 
 
 
-
-Entonces comprobe que basicamente mi idea esta bien, lo hice en api gateway y con lambdas.. el unico problema es que la informacion la tuve que seleccionar antes para que lamba la pudiera obtener.
-si me puieras dar caulquier ayuda para CORS en este caso aprticular me gustaria mucho.
+Y despues es simplemente buscar duplicados. En los js se ve mas  la logica.
+Estos archivos los utilize para pruebas con node.
 
 Elegi comparar deadpool y batroc porque son personajes con bastante historia, por lo que tendrian suficientes matches en ambas categorias.
+Igual si me pudieras ayudar a solucionar lo de CORS seria genial. Solo tendria que cambiar los urls dentro del lambda y deberia de funcionar bien.
+
+
+Otro problema que no tengo la menor idea de por que pasa y no encontre mucha ayuda en linea es que: Cuando cambio la lambda de comparar solo funciona una vez
+depues de eso me regresa null, luego le agrego un espacio y vuelve a funcionar.. es muy raro.

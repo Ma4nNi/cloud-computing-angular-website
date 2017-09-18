@@ -1,0 +1,70 @@
+Disculpe por no tener algo completo, cuando vi que todos estaban cambiando de api ya era medio tarde.
+
+Basicamente no tuve idea de como hacer requests mediante JS hacia el API de comic vine. termine creando mocks en mockable.io para calar todos los metodos.
+
+
+El plan era utilizar esta liga para obtener a los personajes cuando diera enter ya si actualizar la dropdown sin muchos requests
+http://comicvine.gamespot.com/api/characters/?api_key=3500994b89773681c6f41564eb101166f41caa34&format=json&field_list=id,name,api_detail_url&filter=name:"+event.name;
+donde event.name es el parametro de lo que esta escrito en el input de busqueda.
+
+despues de eso da a los personajes en el formato:
+
+"results": [
+{
+"api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1529/",
+"id": 1529,
+"name": "Batroc"
+},
+{
+"api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1699/",
+"id": 1699,
+"name": "Batman"
+},
+{
+"api_detail_url": "https://comicvine.gamespot.com/api/character/4005-2083/",
+"id": 2083,
+"name": "Battlewagon"
+}
+]
+
+En el api_detail_url vienen marcados los enemigos y los volumenes en que ha aparecido el personaje en el siguiente formato:
+
+"volume_credits": [
+  {
+  "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-1041/",
+  "id": 1041,
+  "name": "Picture Stories from American History",
+  "site_detail_url": "https://comicvine.gamespot.com/picture-stories-from-american-history/4050-1041/"
+  },
+  {
+  "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-12070/",
+  "id": 12070,
+  "name": "Dragon",
+  "site_detail_url": "https://comicvine.gamespot.com/dragon/4050-12070/"
+  }
+]
+
+y
+
+"character_enemies": [
+  {
+  "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-77621/",
+  "id": 77621,
+  "name": "666",
+  "site_detail_url": "https://comicvine.gamespot.com/666/4005-77621/"
+  },
+  {
+  "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-28702/",
+  "id": 28702,
+  "name": "Ace",
+  "site_detail_url": "https://comicvine.gamespot.com/ace/4005-28702/"
+  }
+]
+
+
+
+
+Entonces comprobe que basicamente mi idea esta bien, lo hice en api gateway y con lambdas.. el unico problema es que la informacion la tuve que seleccionar antes para que lamba la pudiera obtener.
+si me puieras dar caulquier ayuda para CORS en este caso aprticular me gustaria mucho.
+
+Elegi comparar deadpool y batroc porque son personajes con bastante historia, por lo que tendrian suficientes matches en ambas categorias.

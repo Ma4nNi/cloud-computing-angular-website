@@ -1,0 +1,63 @@
+<p>This is the superHeroes view.</p>
+
+<div class=" row">
+  <div class="col-md-6">
+    <h4>Superhero 1 results</h4>
+    <select id="char1">
+
+    </select>
+     </div>
+
+  <div class="col-md-6">
+    <h4>SuperHero 2 results</h4>
+    <select id="char2">
+
+    </select>
+    </div>
+</div>
+<div class="row">
+  <button class="btn-default" onClick="Generate()">GENERATE</button>
+</div>
+
+<div class="row">
+  <div class="col-md-6" id="enemiesRow">
+
+  </div>
+  <div class="col-md-6" id="volumesRow"></div>
+</div>
+<script type="text/javascript">
+  console.log("HELLO")
+  var sampleUrl="https://jr8gulay1b.execute-api.us-east-1.amazonaws.com/dev/comics/characters";
+  $.get(sampleUrl, function(data, status){
+//    console.log("" + data);
+    console.log("RESULTS 1")
+    console.log(data);
+
+    console.log("Finished p1");
+    for(var i=0;i<data.results.length;i++){
+      $("#char1").append("<option value='"+data.results[i].id+"'>"+data.results[i].name+"</option>");
+      $("#char2").append("<option value='"+data.results[i].id+"'>"+data.results[i].name+"</option>");
+    }
+    $("#char1").select2();
+    $("#char2").select2();
+    console.log("AM READY ");
+  });
+
+//  function Generate(){
+//    var values = $("#char1").val();
+//    var value2 = $("#char2").val();
+//
+//    console.log(values, value2)
+//    var compareUrl= "https://jr8gulay1b.execute-api.us-east-1.amazonaws.com/dev/comics/compare";
+//      $.get(compareUrl, function(data, status){
+//
+//        for(var i=0;i<data.volumes.length;i++){
+//          $("#volumesRow").append("<h4>"+data.volumes[i].name+" - "+data.volumes[i].id"</h4>");
+//        }
+//        for(var i=0;i<data.enemies.length;i++){
+//          $("#enemiesRow").append("<h4>"+data.enemies[i]+"</h4>");
+//        }
+//      });
+//  }
+</script>
+

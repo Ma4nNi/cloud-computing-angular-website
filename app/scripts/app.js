@@ -39,6 +39,11 @@ angular
         controller: 'PerformanceCtrl',
         controllerAs: 'performance'
       })
+      .when('/superHeroes', {
+        templateUrl: 'views/superheroes.html',
+        controller: 'SuperheroesCtrl',
+        controllerAs: 'superHeroes'
+      })
       .otherwise({
         redirectTo: '/'
       });

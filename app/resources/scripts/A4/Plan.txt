@@ -1,14 +1,20 @@
-Disculpe por dar una tarea un tanto diferente a lo que pediste, cuando vi que todos estaban cambiando de api ya tenia gran parte hecha ye investigada.
+La tarea no esta conectada al api directamente. Utilize mocks.
 
 Basicamente no tuve idea de como hacer requests mediante JS hacia el API de comicVine debido a problemas con CORS.
-Termine creando mocks en mockable.io para calar todos los metodos y la logica que tenia. Para no entregar nada
+Termine creando mocks en mockable.io para calar todos los metodos y la logica que tenia , si luego me explicas como solucionarlo deberia de poder funcionar sin mayores modificaciones.
+Los personajes son todos los de aqui: http://demo5292390.mockable.io/getDCBat
+Las comparaciones siempre son entre deadpool y batroc: aqui sus links
+  Deadpool:http://demo5292390.mockable.io/character/deadpool
+  Batrock: http://demo5292390.mockable.io/character/batroc
+Estos mocks son copy paste de respuestas que obtuve del api, pero enmockable puedo modificar los headers de CORS y asi no tuve ningun problema, igual en API gateway.
+
 
 
 El plan era utilizar esta liga para obtener a los personajes- actualizandose cada que presionaras enter
 http://comicvine.gamespot.com/api/characters/?api_key=3500994b89773681c6f41564eb101166f41caa34&format=json&field_list=id,name,api_detail_url&filter=name:"+event.name;
 
 Donde event.name es el parametro de lo que esta escrito en el input de busqueda.
-Eso me regresa  aperosnajes en el siguiente formato:
+Eso me regresa  personajes en el siguiente formato:
 
 "results": [
 {
@@ -64,12 +70,13 @@ y
 
 
 
-Y despues es simplemente buscar duplicados. En los js se ve mas  la logica.
-Estos archivos los utilize para pruebas con node.
+Y despues es simplemente buscar duplicados. En los js se puede analizar la logica.
+Estos archivos los utilize para pruebas con node, por eso la estructura es un poco distinta.
 
 Elegi comparar deadpool y batroc porque son personajes con bastante historia, por lo que tendrian suficientes matches en ambas categorias.
 Igual si me pudieras ayudar a solucionar lo de CORS seria genial. Solo tendria que cambiar los urls dentro del lambda y deberia de funcionar bien.
 
 
 Otro problema que no tengo la menor idea de por que pasa y no encontre mucha ayuda en linea es que: Cuando cambio la lambda de comparar solo funciona una vez
-depues de eso me regresa null, luego le agrego un espacio y vuelve a funcionar.. es muy raro.
+depues de eso me regresa null, si modifico la lambda con un espacio y la guardo, vuelve a funcionar una vez... es muy raro.
+ La lambda es mannpe-getCharacter

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9eab9c3-2151-454e-a026-97f5c2f41d1b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/select2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/resources/scripts/A4/Plan.txt" afterPath="$PROJECT_DIR$/app/resources/scripts/A4/Plan.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/superheroes.html" afterPath="$PROJECT_DIR$/app/views/superheroes.html" />
     </list>
@@ -43,8 +40,8 @@
       <file leaf-file-name="superheroes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/superheroes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="57" column="51" lean-forward="false" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+            <state relative-caret-position="36">
+              <caret line="2" column="90" lean-forward="false" selection-start-line="2" selection-start-column="90" selection-end-line="2" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -63,8 +60,8 @@
       <file leaf-file-name="Plan.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/resources/scripts/A4/Plan.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="74" column="93" lean-forward="false" selection-start-line="74" selection-start-column="93" selection-end-line="74" selection-end-column="93" />
+            <state relative-caret-position="517">
+              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -169,10 +166,10 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/superheroes.js" />
         <option value="$PROJECT_DIR$/app/resources/scripts/A4/getCharacters.js" />
         <option value="$PROJECT_DIR$/app/resources/scripts/A4/compareCharacters.js" />
-        <option value="$PROJECT_DIR$/app/views/superheroes.html" />
         <option value="$PROJECT_DIR$/bower_components/select2/bower.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/views/superheroes.html" />
         <option value="$PROJECT_DIR$/app/resources/scripts/A4/Plan.txt" />
       </list>
     </option>
@@ -321,12 +318,12 @@
       <workItem from="1504668465791" duration="32000" />
       <workItem from="1504740297766" duration="23780000" />
       <workItem from="1505703994637" duration="1852000" />
-      <workItem from="1505707132072" duration="10468000" />
+      <workItem from="1505707132072" duration="11497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81382000" />
+    <option name="totallyTimeSpent" value="82411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="391" y="28" width="1857" height="981" extended-state="6" />
@@ -648,14 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/superheroes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="57" column="51" lean-forward="false" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/images/select2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -696,10 +685,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/superheroes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="90" lean-forward="false" selection-start-line="2" selection-start-column="90" selection-end-line="2" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/resources/scripts/A4/Plan.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="74" column="93" lean-forward="false" selection-start-line="74" selection-start-column="93" selection-end-line="74" selection-end-column="93" />
+        <state relative-caret-position="517">
+          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding />
         </state>
       </provider>

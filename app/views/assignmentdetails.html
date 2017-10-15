@@ -1,3 +1,8 @@
+<div ng-if="assignmentIsException">
+  <div ng-include="exceptionHtml"></div>
+</div>
+
+<div ng-if="!assignmentIsException">
 <h3>{{assignment.title}}</h3>
 <div class="row question-wrapper"  ng-repeat="question in assignment.questions">
   <div class="col-md-4">
@@ -27,4 +32,5 @@
 
   </div>
 
+</div>
 </div>

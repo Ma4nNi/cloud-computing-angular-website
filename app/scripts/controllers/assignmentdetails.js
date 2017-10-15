@@ -14,16 +14,34 @@ angular.module('yoApp')
       'AngularJS',
       'Karma'
     ];
+    $scope.exceptionAssignments = [4,5,6];
+    $scope.assignmentIsException = false;
 
-    console.log("Params:",$routeParams.id);
-    $http.get('/resources/assignments/assignment'+$routeParams.id+'.json').
-    then(function onSuccess(response) {
-      $scope.assignment = response.data;
-      console.log("tengo una respuesta!", $scope.assignment );
-    }).
-    catch(function onError(response) {
-      console.log(response);
-    });
+    for(var i=0;i<$scope.exceptionAssignments.length; i++){
+      console.log(i);
+      if($scope.exceptionAssignments[i]==$routeParams.id){
+        $scope.assignmentIsException = true;
+        
+      }
+    }
+    if($scope.assignmentIsException){
+      $scope.exceptionHtml = '/resources/assignments/assignment'+$routeParams.id+'.html';
+    }
+    else{
+      console.log("Params:",$routeParams.id);
+      $http.get('/resources/assignments/assignment'+$routeParams.id+'.json').
+      then(function onSuccess(response) {
+        $scope.assignment = response.data;
+        console.log("tengo una respuesta!", $scope.assignment );
+      }).
+      catch(function onError(response) {
+        console.log(response);
+      });
 
+    }
+
+
+
+    
 
   });

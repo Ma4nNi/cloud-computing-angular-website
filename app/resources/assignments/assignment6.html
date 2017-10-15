@@ -1,0 +1,45 @@
+<h2>Assignment 6</h2>
+<p>
+I consider the AWS Well Architected Framework document like a collection of guidelines or recommendations about which things you should take into account to develop the architecture of your cloud solution. IN a way it’s like a compilation of different problems and solutions that multiple other companies have been through and are being shared to us by AWS architects.  They do this by covering 5 basic concepts which they call pillars: Security, reliability, Performance Efficiency and Cost optimization. Before starting with each of these pillars the document does provide a set of basic guidelines:  In general they tell us to take advantage of being in the cloud. Scale your capacity based on your needs, make use of different environments to test when it fails, make decisions on how to improve your workload and automate the creation and replication of your systems.
+</p>
+
+<p>
+<h3>Security</h3>
+The first pillar mentioned is security. The most important thing here, before talking about your architecture or software is that you need to have some kind of protection to who accesses your AWS account. It doesn’t matter how good your encryption between services is if anyone could access your AWS console.  Solution: Enable multi factor authentication and give appropriate resource permissions to anyone working on the application with IAM . The rest of the concepts mentioned here are pretty straight forward.  Use logs to check whenever something happens (CloudTrail and CloudWatch), have some kind of defense implemented in your application, be ready to respond to any attack, and protect your data.
+
+<p>
+<h3>Reliability</h3>
+This means that our application should be able to recover in case something happens.  We need to regularly test how our recovery works so when a real one happens – we’ll be prepared.  Make sure that if one part of the solution fails, the other parts are unaffected.  Monitor your demand, how much capacity do you need, and backup your data regularly. All of these things are needed in order to have a reliable application. AWS CloudFormation allows us to make templates of our resources so we’re ready to get them back up in case anything fails. CloudTrail and AWS Config provide us with records and an inventory of resources and configurations.
+</p>
+
+<p>
+<h3>Performance Efficiency</h3>
+We should use the technologies that best suit the solution of our problem.  For this they recommend us to focus on a data-driven architecture. We should choose our storage based on if we prefer block, file object, if it’s going to be available offline, etc.   We should choose an appropriate database based on our workload on if it’s read intensive vs. write intensive and any other factor. Make sure to use the right network tools to reduce your latency. For this we may want to consider the physical location of our resources and our users. We need to know if we want to use Cloudfront, Route53, Direct Connect, or some kind of specialized version of S3 and EBS.
+</p>
+
+<p>
+<h3>Monitoring</h3>
+Once we have our architecture we need to monitor our performance to see if everything’s going according to our plan post launch and to make our application better. The interesting part of this is that you eventually have to make some kind of tradeoff. Do you prefer consistency or durability, latency, high performance?  Normally you can’t have all of them so monitoring your application helps you make these kinds of decisions in order to improve the performance of your application. 
+</p>
+
+<p>
+<h3>Cost Optimization</h3>
+This is related to the application lifecycle, this is something you have to consider since the planning phase of your application in order to maximize returns.  You need to know if you’re having a schedule for working with your resources, you need to consider if you prefer one large server or multiple smaller ones, consider the throughput of your databases, how many calls you expect on a certain resource per day, etc.  The good thing about cloud services is that you only have to pay for what you use – but you need to know how much you’re using and why it’s being used.
+</p>
+
+<p>
+<h3>Operational Excellence Pillar</h3>
+This means that everything in your application should be tested, documented, reviewed and most of it should be automated.  Make sure your documentation doesn’t become outdated as your procedures change, make sure you remember your environment configurations, your app designs, your response plans, and everything. When something unexpected occurs everyone should know what to do. Standardize your operations; automate as much as a possible so that you only do small changes. And make sure to have automated processes to deal with the unexpected occurrences.  This section isn’t as related to cloud computing in general but more like general guidelines any organized team should have.  Have a code repository, have well-structured teams and processes, automate as much as possible so human errors are minimal, etc. 
+</p>
+
+<p>
+<h3>For our project</h3>
+In terms of security we’re going to implement permissions in between resources so resources that aren’t supposed to interact with each other are not able to do so.  We also plan to use authentication and tokens for some of our API resources in order to protect our users sensitive data.  In terms of reliability, we’re using development frameworks in order to have our entire infrastructure ready to be re-deployed with a single command; this includes our API, our lambdas and all of the UI.  
+For performance efficiency we’ve already discussed why we’re using what we’re using in order to optimize our solution. The only issue here would be to see if we’re going to eventually need to use CloudFront for our UI.  Once we’ve finished the development of most of our project we plan to monitor if everything is interacting the way it should, if the workflow is having errors or not, etc. with the help of the AWS monitoring tools.  For the last 2 points I’m afraid I don’t believe we’re implementing anything real. For cost efficiency we’re doing an analysis on how many EC2 instances we’re going to need in order to generate our ML model, and we’re going to reduce the memory assigned to every lambda function to the amount that they require, nothing more.  Once we know our expected traffic we’ll also configure our DynamoDB throughput accordingly, but while in testing it’ll be set to minimum settings.   And last but not least we’ll be using github   as a tool to share our code and rollback in case something fails   we’ll  also be doing integration tests to weed out unwanted behaviors.
+</p>
+
+<p>
+    <h4>Teamwork:</h3>
+    Jorge Payan
+</p>
+

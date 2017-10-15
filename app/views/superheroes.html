@@ -1,7 +1,6 @@
 <p>Tarea 4</p>
 <div class="row">
-  <h4>POR FAVOR VEA EL ARCHIVO DE PLAN.TXT  ANTES DE UTILIZAR LA PAGINA- DARA ACLARACIONES</h4>
-  <h4>Codigos aqui! :  <a href="https://github.com/Ma4nNi/cloud-computing-angular-website/tree/master/app/resources/scripts/A4">Github</a></h4>
+
 </div>
 <div class=" row">
   <div class="col-md-6">
@@ -28,6 +27,11 @@
   </div>
   <div class="col-md-6" id="volumesRow"></div>
 </div>
+
+<h3>BUCKET LOCATION: <a href="https://s3.amazonaws.com/mannpe-comic-bucket/1009148_1010354.json"> mannpe-comic-bucket </a> </h3>
+<h3>Code Location: <a href=""></a></h3>
+
+
 <script type="text/javascript">
   console.log("HELLO")
   var sampleUrl="https://jr8gulay1b.execute-api.us-east-1.amazonaws.com/dev/comics/characters";
@@ -52,17 +56,24 @@
     var values = $("#char1").val();
     var value2 = $("#char2").val();
 
-    console.log(values, value2)
-    var compareUrl= "https://jr8gulay1b.execute-api.us-east-1.amazonaws.com/dev/comics/compare";
+    //console.log(values, value2)
+    var values=1009148;
+    var value2=1010354;
+    var compareUrl= "https://cbc3rme0x9.execute-api.us-east-1.amazonaws.com/Development/compare?firstCharacterId="+values+"&secondCharacterId="+value2;
+    compareUrl = "https://cbc3rme0x9.execute-api.us-east-1.amazonaws.com/Development/comics/compare?firstCharacterId=1009148&secondCharacterId=1010354";
       $.get(compareUrl, function(data, status){
+        console.log("trying with:",compareUrl);
+        data = $.parseJSON(data["body"]);
+        console.log(data.results);
+        console.log(data.results.length);
+
         $("#volumesRow").append("<h2>Common Volumes</h2>");
         $("#enemiesRow").append("<h2>Common enemies</h2>");
-        for(var i=0;i<data.volumes.length;i++){
-          $("#volumesRow").append("<h4>"+data.volumes[i].name+" - "+data.volumes[i].id+"</h4>");
+        for(var i=0;i<data.results.length;i++){
+          console.log(data.results[i]);
+          $("#volumesRow").append("<h4>"+data.results[i]+"</h4>");
         }
-        for(var i=0;i<data.enemies.length;i++){
-          $("#enemiesRow").append("<h4>"+data.enemies[i]+"</h4>");
-        }
+        
       });
   }
 </script>

@@ -1,0 +1,50 @@
+{
+  "title":"Assignment 3",
+  "description":"Every answer of these questions should be in your S3 website with a link to the code in CodeCommit.",
+  "finished":false,
+  "questions":[
+    {
+      "number":1,
+      "text":"Create a NodeJS script that will do the following:• Download the image from s3://cc414-images/scientist.png.• Check if the metadata key “x-amz-meta-move” of the image is true.• If true, upload the image to s3://cc414-images/{MATRICULA}/image.png",
+      "value":20,
+      "answer":"NodeJS File provided",
+      "file":"/resources/scripts/A3/aws-downup.js"
+    },
+    {
+      "number":2,
+      "text":"Create a NodeJS script that will do the following:• Will get the Nasa Astronomy Picture of the day.• Save the image in the local file system.• Print the title of the image.",
+      "value":20,
+      "answer":"NodeJS file provided",
+      "file":"/resources/scripts/A3/nasa-apod.js"
+    },
+    {
+      "number":3,
+      "text":"Implement Google Analytics in your personal web site (All teams will do the same for their Final Project).",
+      "value":20,
+      "answer":"Implemented. Added image proof below. Tried adding a graph in the performance view but failed miserably.",
+      "images":[
+        "http://i.imgur.com/zr828vk.png"
+      ]
+    },
+    {
+      "number":4,
+      "text":"Read and explain the following article by Martin Fowler: http://martinfowler.com/ articles/ richardsonMaturityModel.html.",
+      "value":20,
+      "answer":"In this article Martin Fowler explains what's called a Richardson Maturity Model. That as far as I understood si a way to identify the maturity of an API design by using what he calls 'levels'. \n Level 0 is like a bare bones system, where you just send informatin through it. Level 1 is the same as 0 but instead of using a single end-point you strat dividing it into resources. Level 2 makes use of the HTTP verbs like GET, POSt and PUT - things in this level are pretty much what people start to consider  RESTful.Finally we have level 3 which talks about using hypermedia controls which allow us to change URI schemes without problems with the clients, and helps clients know what else they can do as well as allow the team to advertise new capabilities. \n In the end he tells us that Roy fielding considers reaching level 3 a pre condition of REST."
+    },
+    {
+      "number":5,
+      "text":"Explain why cloud computing is important.",
+      "value":10,
+      "answer":"Basically because computers are everywhere now, we have our phones, laptops, smart tvs, smart watches, etc. Pretty much any service or company that wants to thrive needs to be accessible by the internet.  Cloud computing allows ANYONE to be able to deliver their services in such a way without having to spend the thousands or millions of dollars that were needed before. It also allows your business to scale as you grow, it enables you to only focus on what you actually provide instead of having to worry about extra things like maintaining hardware, buying infrastructure, etc."
+    },
+    {
+      "number": 6,
+      "text": "Explain what would like to change in this class and why.",
+      "value": 10,
+      "answer": "While I certainly enjoy this class better than most I've had I'd make some adjustments to the classes where we do scripts as a group.I'd like it if maybe we started the class with some base code that you gave us beforehand, maybe just tell us the file structure and which libraries to install or some links to the documentation. If you'd tell us to do some pre work for Tuesdays class I think things would be less chaotic. The other type of sessions I find them pretty great."
+    }
+  ]
+
+}
+

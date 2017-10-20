@@ -15,7 +15,7 @@
       "text":"Create DynamoDB using a CloudFormation Template.",
       "value":20,
       "answer":"Template file used is provided in the download link.",
-      "file":"/resources/scripts/A8/DynamoMarvelLogin.json"
+      "file":"/resources/scripts/A8/DynamoMarvelLog.json"
     }
   ]
 

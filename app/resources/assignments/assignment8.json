@@ -6,9 +6,8 @@
     {
       "number":1,
       "text":"Modify your Marvel Lambda Application to log in DynamoDB.",
-      "value":20,
-      "answer":"",
-      "file":"/resources/scripts/A8/"
+      "value":80,
+      "answer":"DynamoDB ARN = arn:aws:dynamodb:us-east-1:292274580527:table/mann-marvel-log"
     },
     {
       "number":2,
@@ -18,6 +17,5 @@
       "file":"/resources/scripts/A8/DynamoMarvelLog.json"
     }
   ]
-
 }
 

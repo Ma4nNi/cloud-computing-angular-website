@@ -67,7 +67,7 @@
     var compareSeriesUrl = "https://cbc3rme0x9.execute-api.us-east-1.amazonaws.com/Development/series/compare?firstCharacterId="+values+"&secondCharacterId="+value2;
       $.get(compareUrl, function(data, status){
         console.log("trying with:",compareUrl);
-        data = $.parseJSON(data["body"]);
+        data = $.parseJSON(data);
         console.log(data.results);
         console.log(data.results.length);
 
@@ -83,10 +83,8 @@
 
       $.get(compareSeriesUrl, function(data, status){
         console.log("trying series with:",compareUrl);
-       
         console.log(data.results);
         console.log(data.results.length);
-
         $("#enemiesRow").empty();
         $("#enemiesRow").append("<h2>Common series</h2>");
         for(var i=0;i<data.results.length;i++){
